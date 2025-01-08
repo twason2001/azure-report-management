@@ -1,0 +1,183 @@
+/* Global Container for the Dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Content area styling */
+  .content-wrapper {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding-bottom: 40px; /* Add space for the footer */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    z-index: 10;
+    border-bottom: 2px solid #343a40; /* Subtle bottom border */
+    padding: 0.5rem 1rem; /* Reduced padding to make the navbar more compact */
+    height: 60px; /* Set a fixed height for the navbar */
+  }
+  
+  .navbar-brand {
+    font-size: 1.4rem; /* Slightly smaller font for the brand name */
+    font-weight: bold;
+  }
+  
+  /* Navbar links */
+  .nav-link {
+    color: #fff !important; /* Ensuring nav links are white */
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-link:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+  }
+  
+  .navbar-nav .nav-link.active {
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+  
+  /* Ensure profile section is aligned to the top right corner */
+  .navbar-nav {
+    display: flex;  /* Use flexbox to align items */
+    flex-grow: 1;   /* This will push the last item to the right */
+  }
+  .navbar-nav .nav-item {
+    padding:20px /* Align the dropdown menu to the far right */
+  }
+
+  
+  .navbar-nav .nav-item:last-child {
+    margin-left: auto; /* Align the dropdown menu to the far right */
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown-toggle {
+    color: white;
+    background-color: #343a40;
+    border-color: #343a40;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-menu {
+    min-width: 10rem;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #343a40;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  footer .text-center {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Button Styles */
+  button {
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    background-color: #0056b3;
+  }
+  
+  button.outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+  }
+  
+  button.outline-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  button:focus {
+    box-shadow: none;
+  }
+  
+  /* Container Styling */
+  .container {
+    padding-top: 60px; 
+    padding-bottom: 50px;/* Ensure content starts below the navbar */
+  }
+
+  /* Login Page Styles */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .login-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-card {
+    border: none;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .login-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  .login-btn {
+    border-radius: 8px;
+    background: #6a11cb;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background: #2575fc;
+  }
+  
+  .error-alert {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  
+  
